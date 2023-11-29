@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sfu.diploma.diplomadesktop.AddNewDrugController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="dnaPic1" disable="true" fitHeight="39.0" fitWidth="40.0" layoutX="540.0" layoutY="180.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="9.5">
+               <image>
+                  <Image url="@../../../../img/dna_gray_back.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clockPic1" disable="true" fitHeight="41.0" fitWidth="46.0" layoutX="127.0" layoutY="60.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="19.7">
+               <image>
+                  <Image url="@../../../../img/colored_clock.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doctorPic1" disable="true" fitHeight="88.0" fitWidth="55.0" layoutX="231.0" layoutY="89.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+               <image>
+                  <Image url="@../../../../img/colored_doctor1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doctorPic2" disable="true" fitHeight="63.0" fitWidth="55.0" layoutX="35.0" layoutY="104.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="31.0">
+               <image>
+                  <Image url="@../../../../img/colored_doctor2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bigHospitalPic1" disable="true" fitHeight="56.0" fitWidth="59.0" layoutX="330.0" layoutY="56.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-42.7">
+               <image>
+                  <Image url="@../../../../img/colored_pills.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ambulancePic1" disable="true" fitHeight="49.0" fitWidth="71.0" layoutX="460.0" layoutY="76.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="20.6">
+               <image>
+                  <Image url="@../../../../img/colored_ambulance.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heartPic1" disable="true" fitHeight="43.0" fitWidth="49.0" layoutX="145.0" layoutY="220.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-49.6">
+               <image>
+                  <Image url="@../../../../img/colored_heart.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heartRateMonitorPic1" disable="true" fitHeight="43.0" fitWidth="49.0" layoutX="394.0" layoutY="141.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-13.0">
+               <image>
+                  <Image url="@../../../../img/colored_heart_rate_monitor.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospitalPic1" disable="true" fitHeight="34.0" fitWidth="37.0" layoutX="142.0" layoutY="132.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="24.8">
+               <image>
+                  <Image url="@../../../../img/colored_big_hospital.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="medBagPic1" disable="true" fitHeight="34.0" fitWidth="56.0" layoutX="14.0" layoutY="300.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-31.2">
+               <image>
+                  <Image url="@../../../../img/med_bag_darkblue_back.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="microscopePic1" disable="true" fitHeight="51.0" fitWidth="46.0" layoutX="191.0" layoutY="290.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="49.4">
+               <image>
+                  <Image url="@../../../../img/colored_microscope.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="patchPic1" disable="true" fitHeight="34.0" fitWidth="38.0" layoutX="461.0" layoutY="350.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="84.3">
+               <image>
+                  <Image url="@../../../../img/colored_patch.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="screenPic1" disable="true" fitHeight="63.0" fitWidth="64.0" layoutX="89.0" layoutY="340.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="153.4">
+               <image>
+                  <Image url="@../../../../img/colored_badge.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="scopePic1" disable="true" fitHeight="90.0" fitWidth="56.0" layoutX="300.0" layoutY="320.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-21.2">
+               <image>
+                  <Image url="@../../../../img/colored_pribor.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="syringePic1" disable="true" fitHeight="63.0" fitWidth="49.0" layoutX="480.0" layoutY="270.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-111.9">
+               <image>
+                  <Image url="@../../../../img/colored_syringe.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tabletPic1" disable="true" fitHeight="74.0" fitWidth="77.0" layoutX="300.0" layoutY="230.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="80.1">
+               <image>
+                  <Image url="@../../../../img/colored_tablet.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="addNewDrugLabel" alignment="CENTER" layoutY="14.0" prefWidth="600.0" text="Добавить лекарство" textAlignment="CENTER" textFill="#b9b6b6">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="authorOfPick" layoutX="370.0" layoutY="375.0" opacity="0.22" text="Изображение от macrovector на Freepik" />
+            <Button fx:id="confirmNewDrugsChoiceButton" alignment="CENTER" disable="true" layoutX="240.0" layoutY="332.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#finishSelectingNewDrug" prefHeight="32.0" style="-fx-background-color: #265B84; -fx-background-radius: 5;" text="Подтвердить" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="16.0" />
+               </font></Button>
+            <ScrollPane layoutX="25.0" layoutY="100.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="550.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <VBox fx:id="allDrugsInPharmacyVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="530.0" spacing="2.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="530.0" style="-fx-border-color: gainsboro; -fx-border-width: 2;" text=" №    Наименование лекарства   Всего/Осталось   Источник финанс.">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children></VBox>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" layoutY="50.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0">
+               <children>
+                  <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" opacity="0.61" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../img/search.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="3.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="nameOfDrugTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="530.0" promptText="Введите название лекарства" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;">
+                     <font>
+                        <Font size="16.0" />
+                     </font></TextField>
+               </children>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="-200.0" />
+         </VBox.margin>
+      </Pane>
+   </children>
+</VBox>

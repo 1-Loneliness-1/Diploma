@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:controller="com.sfu.diploma.diplomadesktop.HelloController" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="dnaPic1" fitHeight="39.0" fitWidth="40.0" layoutX="540.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" rotate="9.5">
+               <image>
+                  <Image url="@../../../../img/dna.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="clockPic1" fitHeight="41.0" fitWidth="46.0" layoutX="127.0" layoutY="60.0" pickOnBounds="true" preserveRatio="true" rotate="19.7">
+               <image>
+                  <Image url="@../../../../img/clock.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doctorPic1" fitHeight="88.0" fitWidth="55.0" layoutX="231.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+               <image>
+                  <Image url="@../../../../img/doctor.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="doctorPic2" fitHeight="63.0" fitWidth="55.0" layoutX="35.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true" rotate="31.0">
+               <image>
+                  <Image url="@../../../../img/doctor2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="bigHospitalPic1" fitHeight="56.0" fitWidth="59.0" layoutX="330.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" rotate="-42.7">
+               <image>
+                  <Image url="@../../../../img/big_hospital.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ambulancePic1" fitHeight="49.0" fitWidth="71.0" layoutX="460.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" rotate="20.6">
+               <image>
+                  <Image url="@../../../../img/ambulance.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heartPic1" fitHeight="43.0" fitWidth="49.0" layoutX="145.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" rotate="-49.6">
+               <image>
+                  <Image url="@../../../../img/heart.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="heartRateMonitorPic1" fitHeight="43.0" fitWidth="49.0" layoutX="394.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" rotate="-13.0">
+               <image>
+                  <Image url="@../../../../img/heart_rate_monitor.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="hospitalPic1" fitHeight="34.0" fitWidth="37.0" layoutX="142.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true" rotate="24.8">
+               <image>
+                  <Image url="@../../../../img/hospital.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="medBagPic1" fitHeight="34.0" fitWidth="56.0" layoutX="14.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true" rotate="-31.2">
+               <image>
+                  <Image url="@../../../../img/med_bag.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="microscopePic1" fitHeight="51.0" fitWidth="46.0" layoutX="191.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" rotate="49.4">
+               <image>
+                  <Image url="@../../../../img/microscope.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="patchPic1" fitHeight="34.0" fitWidth="38.0" layoutX="461.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true" rotate="84.3">
+               <image>
+                  <Image url="@../../../../img/patch.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="screenPic1" fitHeight="63.0" fitWidth="64.0" layoutX="89.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" rotate="153.4">
+               <image>
+                  <Image url="@../../../../img/screen.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="scopePic1" fitHeight="90.0" fitWidth="56.0" layoutX="300.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true" rotate="-21.2">
+               <image>
+                  <Image url="@../../../../img/stethoscope.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="syringePic1" fitHeight="63.0" fitWidth="49.0" layoutX="480.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" rotate="-111.9">
+               <image>
+                  <Image url="@../../../../img/syringe.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="tabletPic1" fitHeight="74.0" fitWidth="77.0" layoutX="300.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true" rotate="80.1">
+               <image>
+                  <Image url="@../../../../img/tablet.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets top="400.0" />
+         </VBox.margin>
+      </Pane>
+      <Label fx:id="loginLabel" text="Авторизация" textAlignment="CENTER" textFill="#b9b6b6">
+         <font>
+            <Font name="JetBrains Mono Regular" size="22.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+      </Label>
+      <TextField fx:id="idOfUserField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="ID сотрудника">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TextField>
+      <PasswordField fx:id="userPassField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="400.0" promptText="Пароль">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Button fx:id="loginButton" mnemonicParsing="false" text="Войти" textAlignment="CENTER" onAction="#userLogin">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" top="50.0" />
+         </VBox.margin></Button>
+      <Label fx:id="authorOfPick" opacity="0.22" text="Изображение от macrovector на Freepik">
+         <VBox.margin>
+            <Insets bottom="455.0" left="350.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

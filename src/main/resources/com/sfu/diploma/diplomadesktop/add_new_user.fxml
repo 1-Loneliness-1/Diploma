@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sfu.diploma.diplomadesktop.AddNewUserController">
+    <children>
+        <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0">
+            <children>
+                <HBox fx:id="infoFieldsHBox" layoutX="25.0" layoutY="58.0" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="190.0">
+                            <children>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="80.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="ID">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="5.0" />
+                                            </HBox.margin></Label>
+                                        <TextField fx:id="newUserIDTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" promptText="000000" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5;">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font></TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="42.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="5.0" />
+                                    </VBox.margin>
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="50.0" text="Пароль">
+                                 <font>
+                                    <Font name="Arial" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="5.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="newUserPasswordTextField" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5;" />
+                           </children>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="-10.0" />
+                                    </VBox.margin>
+                           <children>
+                              <Label fx:id="userPositionLabel" prefHeight="30.0" prefWidth="68.0" text="Должность">
+                                 <font>
+                                    <Font name="Arial" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="2.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="userPositionTextField" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5;" />
+                           </children></HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="50.0" top="70.0" />
+                            </HBox.margin></VBox>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="230.0" prefWidth="190.0">
+                            <children>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Фамилия" textAlignment="RIGHT">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                        <TextField fx:id="userSurnameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5;">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font>
+                                        </TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Имя" textAlignment="RIGHT">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                        <TextField fx:id="userNameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5;">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font></TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" left="30.0" />
+                                    </VBox.margin>
+                                </HBox>
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+                                    <children>
+                                        <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" text="Отчество" textAlignment="RIGHT">
+                                            <font>
+                                                <Font size="13.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets right="5.0" />
+                                            </HBox.margin>
+                                        </Label>
+                                        <TextField fx:id="userMidnameTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5;">
+                                            <font>
+                                                <Font name="Arial" size="13.0" />
+                                            </font></TextField>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0" />
+                                    </VBox.margin>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="60.0" top="70.0" />
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <ImageView fx:id="dnaPic1" disable="true" fitHeight="39.0" fitWidth="40.0" layoutX="540.0" layoutY="180.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="9.5">
+                    <image>
+                        <Image url="@../../../../img/dna.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="clockPic1" disable="true" fitHeight="41.0" fitWidth="46.0" layoutX="127.0" layoutY="60.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="19.7">
+                    <image>
+                        <Image url="@../../../../img/clock.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="doctorPic1" disable="true" fitHeight="88.0" fitWidth="55.0" layoutX="231.0" layoutY="89.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+                    <image>
+                        <Image url="@../../../../img/doctor.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="doctorPic2" disable="true" fitHeight="63.0" fitWidth="55.0" layoutX="35.0" layoutY="104.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="31.0">
+                    <image>
+                        <Image url="@../../../../img/doctor2.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="bigHospitalPic1" disable="true" fitHeight="56.0" fitWidth="59.0" layoutX="330.0" layoutY="56.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-42.7">
+                    <image>
+                        <Image url="@../../../../img/big_hospital.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="ambulancePic1" disable="true" fitHeight="49.0" fitWidth="71.0" layoutX="460.0" layoutY="76.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="20.6">
+                    <image>
+                        <Image url="@../../../../img/ambulance.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="heartPic1" disable="true" fitHeight="43.0" fitWidth="49.0" layoutX="145.0" layoutY="220.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-49.6">
+                    <image>
+                        <Image url="@../../../../img/heart.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="heartRateMonitorPic1" disable="true" fitHeight="43.0" fitWidth="49.0" layoutX="394.0" layoutY="141.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-13.0">
+                    <image>
+                        <Image url="@../../../../img/heart_rate_monitor.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="hospitalPic1" disable="true" fitHeight="34.0" fitWidth="37.0" layoutX="142.0" layoutY="132.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="24.8">
+                    <image>
+                        <Image url="@../../../../img/hospital.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="medBagPic1" disable="true" fitHeight="34.0" fitWidth="56.0" layoutX="14.0" layoutY="300.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-31.2">
+                    <image>
+                        <Image url="@../../../../img/med_bag.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="microscopePic1" disable="true" fitHeight="51.0" fitWidth="46.0" layoutX="191.0" layoutY="290.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="49.4">
+                    <image>
+                        <Image url="@../../../../img/microscope.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="patchPic1" disable="true" fitHeight="34.0" fitWidth="38.0" layoutX="461.0" layoutY="200.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="84.3">
+                    <image>
+                        <Image url="@../../../../img/patch.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="screenPic1" disable="true" fitHeight="37.0" fitWidth="46.0" layoutX="60.0" layoutY="250.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="153.4">
+                    <image>
+                        <Image url="@../../../../img/screen.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="scopePic1" disable="true" fitHeight="90.0" fitWidth="56.0" layoutX="300.0" layoutY="320.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-21.2">
+                    <image>
+                        <Image url="@../../../../img/stethoscope.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="syringePic1" disable="true" fitHeight="63.0" fitWidth="49.0" layoutX="480.0" layoutY="270.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="-111.9">
+                    <image>
+                        <Image url="@../../../../img/syringe.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="tabletPic1" disable="true" fitHeight="74.0" fitWidth="77.0" layoutX="300.0" layoutY="230.0" opacity="0.25" pickOnBounds="true" preserveRatio="true" rotate="80.1">
+                    <image>
+                        <Image url="@../../../../img/tablet.jpg" />
+                    </image>
+                </ImageView>
+                <Label fx:id="logupLabel" alignment="CENTER" layoutX="1.0" layoutY="80.0" prefHeight="30.0" prefWidth="600.0" text="Регистрация сотрудника" textAlignment="CENTER" textFill="#b9b6b6">
+                    <font>
+                        <Font name="JetBrains Mono Regular" size="22.0" />
+                    </font>
+                </Label>
+                <Label fx:id="authorOfPick" layoutX="370.0" layoutY="300.0" opacity="0.22" text="Изображение от macrovector на Freepik" />
+                <Button fx:id="regNewPatientButton" layoutX="210.0" layoutY="260.0" mnemonicParsing="false" onAction="#pushDataInDatabase" prefHeight="30.0" prefWidth="180.0" text="Зарегистрировать">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets top="-200.0" />
+            </VBox.margin>
+        </Pane>
+    </children>
+</VBox>

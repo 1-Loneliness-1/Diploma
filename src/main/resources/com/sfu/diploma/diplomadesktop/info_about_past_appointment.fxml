@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sfu.diploma.diplomadesktop.LastAppointmentInfoController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="600.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <ImageView fx:id="alice" fitHeight="130.0" fitWidth="43.0" layoutX="250.0" layoutY="140.0" opacity="0.05" pickOnBounds="true" preserveRatio="true" rotate="-14.0">
+               <image>
+                  <Image url="@../../../../img/Qao0AsS4dzk.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="authorOfPick" layoutX="370.0" layoutY="270.0" opacity="0.22" text="Изображение от macrovector на Freepik" />
+            <ImageView fitHeight="78.0" fitWidth="125.0" layoutX="250.0" layoutY="-50.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="39.8">
+               <image>
+                  <Image url="@../../../../img/colored_ambulance.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="76.0" layoutX="100.0" layoutY="150.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="-31.3">
+               <image>
+                  <Image url="@../../../../img/colored_badge.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="43.0" layoutX="500.0" layoutY="200.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="77.0">
+               <image>
+                  <Image url="@../../../../img/colored_bag.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="69.0" layoutX="20.0" layoutY="-80.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="-123.7">
+               <image>
+                  <Image url="@../../../../img/colored_big_hospital.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="57.0" layoutX="300.0" layoutY="170.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="-45.0">
+               <image>
+                  <Image url="@../../../../img/colored_clock.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="53.0" layoutX="451.0" layoutY="-17.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="-118.6">
+               <image>
+                  <Image url="@../../../../img/colored_doctor1.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="80.0" fitWidth="46.0" layoutX="135.0" layoutY="-70.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="128.7">
+               <image>
+                  <Image url="@../../../../img/colored_doctor2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="46.0" layoutX="520.0" layoutY="-80.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="16.7">
+               <image>
+                  <Image url="@../../../../img/colored_heart.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="57.0" layoutX="15.0" layoutY="220.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+               <image>
+                  <Image url="@../../../../img/colored_heart_rate_monitor.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="70.0" layoutX="400.0" layoutY="70.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="22.0">
+               <image>
+                  <Image url="@../../../../img/colored_hospital.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="59.0" fitWidth="46.0" layoutX="200.0" layoutY="70.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="20.6">
+               <image>
+                  <Image url="@../../../../img/colored_microscope.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="34.0" fitWidth="32.0" layoutX="200.0" layoutY="230.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="153.4">
+               <image>
+                  <Image url="@../../../../img/colored_patch.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="35.0" layoutX="50.0" layoutY="50.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="65.1">
+               <image>
+                  <Image url="@../../../../img/colored_phone.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="42.0" layoutX="550.0" layoutY="120.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../img/blue_dot.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="50.0" fitWidth="70.0" layoutX="400.0" layoutY="220.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="-31.0">
+               <image>
+                  <Image url="@../../../../img/colored_pills.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="63.0" layoutX="-17.0" layoutY="100.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="151.7">
+               <image>
+                  <Image url="@../../../../img/colored_tablet.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="32.0" layoutX="150.0" layoutY="20.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../img/pill_darkblue_back.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="23.0" fitWidth="28.0" layoutX="400.0" layoutY="40.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../img/red_dot.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="67.0" fitWidth="120.0" layoutX="390.0" layoutY="-120.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-19.4">
+               <image>
+                  <Image url="@../../../../img/colored_syringe.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="46.0" layoutX="300.0" layoutY="70.0" opacity="0.14" pickOnBounds="true" preserveRatio="true" rotate="110.6">
+               <image>
+                  <Image url="@../../../../img/patch_gray_back.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="mainInfoAboutAppointmentLabel" alignment="CENTER" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="600.0" text="Прием №0 от 12.03.2015" textAlignment="CENTER" textFill="#b9b6b6">
+               <font>
+                  <Font name="JetBrains Mono Regular" size="22.0" />
+               </font></Label>
+            <VBox layoutX="30.0" layoutY="-45.0">
+               <children>
+                  <Label fx:id="patientSurnameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Фамилия: Иванов">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin></Label>
+                  <Label fx:id="patientNameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Имя: Иван">
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font></Label>
+                  <Label fx:id="patientMidnameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Отчество: Иванович">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+                  <Label fx:id="birthdayLabel" prefHeight="30.0" prefWidth="210.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Дата рождения: 12.12.1990">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="disabilityLabel" prefHeight="30.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Инвалидность (группа): нет">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="doctorIDLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="140.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="ID врача: 000000">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+                  <Label fx:id="appointmentTimeLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Время приема: 23:59:59">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+               </children>
+            </VBox>
+            <VBox layoutX="290.0" layoutY="-45.0">
+               <children>
+                  <Label fx:id="symptomsLabel" alignment="TOP_LEFT" prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Симптомы: Кашель, температура, мигрень" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" top="2.0" />
+                     </padding></Label>
+                  <Label fx:id="diagnoseLabel" alignment="TOP_LEFT" prefHeight="80.0" prefWidth="280.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Диагноз: ОРВИ" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+                  <Label fx:id="prescriptionDrugsLabel" alignment="TOP_LEFT" prefHeight="120.0" prefWidth="280.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Назначенные лекарства: Лекарство1 Лекарство2" wrapText="true">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding></Label>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</VBox>

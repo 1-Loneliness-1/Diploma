@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1366.0" spacing="20.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sfu.diploma.diplomadesktop.LoginController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Pane prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <ImageView fitHeight="130.0" fitWidth="100.0" layoutX="700.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+            <image>
+               <Image url="@../../../../img/doctor.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="122.0" fitWidth="180.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-29.7">
+            <image>
+               <Image url="@../../../../img/ambulance.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="77.0" fitWidth="100.0" layoutX="60.0" layoutY="250.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="25.1">
+            <image>
+               <Image url="@../../../../img/heart.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="60.0" fitWidth="81.0" layoutX="500.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="7.1">
+            <image>
+               <Image url="@../../../../img/patch.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="126.0" fitWidth="112.0" layoutX="1000.0" layoutY="20.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="42.5">
+            <image>
+               <Image url="@../../../../img/tablet.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="107.0" fitWidth="82.0" layoutX="200.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-14.0">
+            <image>
+               <Image url="@../../../../img/microscope.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="131.0" fitWidth="162.0" layoutX="600.0" layoutY="150.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="37.8">
+            <image>
+               <Image url="@../../../../img/hospital.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="1100.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-20.6">
+            <image>
+               <Image url="@../../../../img/dna.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="67.0" fitWidth="85.0" layoutX="51.0" layoutY="597.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-73.7">
+            <image>
+               <Image url="@../../../../img/dna.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="88.0" fitWidth="91.0" layoutX="300.0" layoutY="600.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-18.4">
+            <image>
+               <Image url="@../../../../img/doctor2.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="73.0" fitWidth="100.0" layoutX="900.0" layoutY="250.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="55.3">
+            <image>
+               <Image url="@../../../../img/screen.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="82.0" fitWidth="72.0" layoutX="1200.0" layoutY="600.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+            <image>
+               <Image url="@../../../../img/clock.jpg" />
+            </image>
+         </ImageView>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbdbdb34" height="140.0" layoutX="1060.0" layoutY="-20.0" stroke="#797676" strokeType="INSIDE" style="-fx-arc-width: 25; -fx-arc-height: 25;" width="280.0" />
+         <VBox layoutX="1060.0" layoutY="-25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0">
+            <children>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <ImageView id="defaultUserPic" fx:id="userAvatar" fitHeight="300.0" fitWidth="101.0" preserveRatio="true" style="-fx-background-radius: 5;">
+                        <image>
+                           <Image url="@../../../../img/default_user.png" />
+                        </image>
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin>
+                     </ImageView>
+                     <VBox prefHeight="200.0" prefWidth="180.0">
+                        <children>
+                           <Label fx:id="workerIDLabel" text="WorkerID" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="surnameLabel" text="Фамилия" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="nameLabel" text="Имя" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="midNameLabel" text="Отчество" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="positionLabel" text="Должность" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                        </children>
+                     </VBox>
+                  </children>
+                  <VBox.margin>
+                     <Insets left="10.0" top="25.0" />
+                  </VBox.margin>
+               </HBox>
+               <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="300.0">
+                 <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                           <VBox prefHeight="200.0" prefWidth="290.0">
+                              <children>
+                                 <Button fx:id="scheduleButton" mnemonicParsing="false" onAction="#getSchedule" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: gainsboro; -fx-border-color: grey;" text="Расписание приема">
+                                    <font>
+                                       <Font size="14.0" />
+                                    </font>
+                                    <opaqueInsets>
+                                       <Insets />
+                                    </opaqueInsets>
+                                    <padding>
+                                       <Insets right="130.0" />
+                                    </padding>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="pharmacyButton" mnemonicParsing="false" onAction="#getPharmacyInfo" prefHeight="30.0" prefWidth="285.0" style="-fx-border-color: grey; -fx-background-color: gainsboro;" text="Аптека">
+                                    <padding>
+                                       <Insets right="210.0" />
+                                    </padding>
+                                    <font>
+                                       <Font size="14.0" />
+                                    </font>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor></Button>
+                                 <Button fx:id="newPatientRegButton" mnemonicParsing="false" onAction="#regNewPatient" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: gainsboro; -fx-border-color: grey;" text="Регистрация пациента">
+                                    <font>
+                                       <Font size="14.0" />
+                                    </font>
+                                    <padding>
+                                       <Insets right="120.0" />
+                                    </padding>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                 </Button>
+                                 <Button fx:id="patientMedInfoButton" mnemonicParsing="false" onAction="#getPatientInfo" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: gainsboro; -fx-border-color: grey;" text="Пациенты">
+                                    <font>
+                                       <Font size="14.0" />
+                                    </font>
+                                    <cursor>
+                                       <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <padding>
+                                       <Insets right="200.0" />
+                                    </padding>
+                                 </Button>
+                              </children>
+                           </VBox>
+                        </children>
+                     </AnchorPane>
+                 </content>
+                  <VBox.margin>
+                     <Insets top="25.0" />
+                  </VBox.margin>
+               </ScrollPane>
+            </children>
+         </VBox>
+         <Label layoutY="660.0" opacity="0.22" text="Изображения от macrovector на Freepik" />
+         <Button fx:id="addNewUserButton" layoutX="1061.0" layoutY="128.0" mnemonicParsing="false" onAction="#addNewUser" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: gainsboro; -fx-border-color: grey;" text="Добавить сотрудника" visible="false">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets right="120.0" />
+            </padding>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button fx:id="registrationPatientButton" layoutX="1061.0" layoutY="157.0" mnemonicParsing="false" onAction="#regNewPatient" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: gainsboro; -fx-border-color: grey;" text="Регистрация пациента" visible="false">
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <font>
+               <Font size="14.0" />
+            </font>
+            <padding>
+               <Insets right="120.0" />
+            </padding>
+         </Button>
+         <Button fx:id="patientButtonForDoctors" layoutX="1061.0" layoutY="187.0" mnemonicParsing="false" onAction="#getPatientInfo" prefHeight="30.0" prefWidth="285.0" style="-fx-background-color: gainsboro; -fx-border-color: grey;" text="Пациенты" visible="false">
+            <font>
+               <Font size="14.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+            <padding>
+               <Insets right="200.0" />
+            </padding>
+         </Button>
+      </children>
+      <VBox.margin>
+         <Insets top="-470.0" />
+      </VBox.margin>
+   </Pane>
+</VBox>

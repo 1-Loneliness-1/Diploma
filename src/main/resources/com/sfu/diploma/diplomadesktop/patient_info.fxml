@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="mainBox" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="1366.0" spacing="20.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sfu.diploma.diplomadesktop.PatientInfoController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <Pane fx:id="mainPane" prefHeight="200.0" prefWidth="200.0">
+      <children>
+         <ImageView fx:id="goBackToFirstPageButton" fitHeight="20.0" fitWidth="20.0" layoutX="-7.0" layoutY="-10.0" onMouseClicked="#goToFirstPage" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../../../../img/previous.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="130.0" fitWidth="100.0" layoutX="700.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-26.6">
+            <image>
+               <Image url="@../../../../img/doctor.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="122.0" fitWidth="180.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-29.7">
+            <image>
+               <Image url="@../../../../img/ambulance.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="77.0" fitWidth="100.0" layoutX="60.0" layoutY="250.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="25.1">
+            <image>
+               <Image url="@../../../../img/heart.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="60.0" fitWidth="81.0" layoutX="500.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="7.1">
+            <image>
+               <Image url="@../../../../img/patch.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="126.0" fitWidth="112.0" layoutX="1000.0" layoutY="20.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="42.5">
+            <image>
+               <Image url="@../../../../img/tablet.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="107.0" fitWidth="82.0" layoutX="200.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-14.0">
+            <image>
+               <Image url="@../../../../img/microscope.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="131.0" fitWidth="162.0" layoutX="600.0" layoutY="150.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="37.8">
+            <image>
+               <Image url="@../../../../img/hospital.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="67.0" fitWidth="67.0" layoutX="1100.0" layoutY="400.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-20.6">
+            <image>
+               <Image url="@../../../../img/dna.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="67.0" fitWidth="85.0" layoutX="51.0" layoutY="597.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-73.7">
+            <image>
+               <Image url="@../../../../img/dna.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="88.0" fitWidth="91.0" layoutX="300.0" layoutY="600.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="-18.4">
+            <image>
+               <Image url="@../../../../img/doctor2.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="73.0" fitWidth="100.0" layoutX="900.0" layoutY="250.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="55.3">
+            <image>
+               <Image url="@../../../../img/screen.jpg" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="82.0" fitWidth="72.0" layoutX="1200.0" layoutY="600.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="45.0">
+            <image>
+               <Image url="@../../../../img/clock.jpg" />
+            </image>
+         </ImageView>
+         <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dbdbdb34" height="140.0" layoutX="1060.0" layoutY="-20.0" stroke="#797676" strokeType="INSIDE" style="-fx-arc-width: 25; -fx-arc-height: 25;" width="280.0" />
+         <VBox layoutX="1060.0" layoutY="-25.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0">
+            <children>
+               <HBox prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <ImageView id="defaultUserPic" fx:id="userAvatar" fitHeight="300.0" fitWidth="101.0" preserveRatio="true" style="-fx-background-radius: 5;">
+                        <image>
+                           <Image url="@../../../../img/default_user.png" />
+                        </image>
+                        <HBox.margin>
+                           <Insets />
+                        </HBox.margin>
+                     </ImageView>
+                     <VBox prefHeight="200.0" prefWidth="180.0">
+                        <children>
+                           <Label fx:id="workerIDLabel" text="WorkerID" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="surnameLabel" text="Фамилия" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="nameLabel" text="Имя" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="midNameLabel" text="Отчество" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                           <Label fx:id="positionLabel" text="Должность" textAlignment="CENTER" underline="true">
+                              <font>
+                                 <Font size="14.0" />
+                              </font>
+                              <VBox.margin>
+                                 <Insets left="10.0" />
+                              </VBox.margin>
+                           </Label>
+                        </children>
+                     </VBox>
+                  </children>
+                  <VBox.margin>
+                     <Insets left="10.0" top="25.0" />
+                  </VBox.margin>
+               </HBox>
+               <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="300.0">
+                 <content>
+                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                        <children>
+                           <VBox fx:id="patientsVBox" prefHeight="200.0" prefWidth="290.0" />
+                        </children>
+                     </AnchorPane>
+                 </content>
+                  <VBox.margin>
+                     <Insets top="25.0" />
+                  </VBox.margin>
+               </ScrollPane>
+            </children>
+         </VBox>
+         <ImageView fitHeight="150.0" fitWidth="200.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" rotate="38.2" x="200.0" y="150.0">
+            <image>
+               <Image url="@../../../../img/spinal.png" />
+            </image>
+         </ImageView>
+         <Rectangle fx:id="backgroundRectangle" arcHeight="5.0" arcWidth="5.0" fill="#dbdbdb1e" height="670.0" layoutX="15.0" layoutY="15.0" stroke="#c4c4c4" strokeType="INSIDE" strokeWidth="2.0" style="-fx-arc-height: 25; -fx-arc-width: 25;" width="1000.0" />
+         <HBox layoutX="15.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1000.0">
+            <children>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label fx:id="patientIdLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="95.0" style="-fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: white;" text="ID: 000000">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                     </Label>
+                     <Label fx:id="patientSurnameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" style="-fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: white;" text="Иванов">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                     </Label>
+                     <Label fx:id="patientNameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Иван">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                     </Label>
+                     <Label fx:id="patientMidnameLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Иванович">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                     </Label>
+                  </children>
+                  <HBox.margin>
+                     <Insets left="15.0" top="10.0" />
+                  </HBox.margin>
+               </VBox>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label fx:id="birthdayLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Дата рождения: 27.03.1999">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin></Label>
+                     <Label fx:id="passportLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Паспорт: 0000 000000">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding></Label>
+                     <Label fx:id="pollisLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="260.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Полис ОМС: 0000 0000 0000 0000">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding></Label>
+                     <Label fx:id="workplaceLabel" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="260.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Место работы: ООО&quot;Пример&quot; г.Таганрог Ростовской обл." wrapText="true">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding></Label>
+                  </children>
+                  <HBox.margin>
+                     <Insets left="45.0" top="10.0" />
+                  </HBox.margin></VBox>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label fx:id="disabilityLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" text="Инвалидность: нет">
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin></Label>
+                     <Label fx:id="phoneLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="235.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5; -fx-border-width: 2;" text="Телефон: +7(800)555-35-35">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="5.0" />
+                        </padding>
+                        <VBox.margin>
+                           <Insets bottom="5.0" />
+                        </VBox.margin></Label>
+                     <Label fx:id="lastAppointmentLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="175.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 2;" text="Прошлые посещения:">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <padding>
+                           <Insets left="2.0" />
+                        </padding>
+                     </Label>
+                     <ScrollPane fx:id="allVisitsScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="85.0" prefWidth="235.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-radius: 5; -fx-border-width: 2;">
+                       <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                              <children>
+                                 <VBox fx:id="allVisitsVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="220.0" />
+                              </children>
+                           </AnchorPane>
+                       </content>
+                     </ScrollPane>
+                  </children>
+                  <HBox.margin>
+                     <Insets left="170.0" top="10.0" />
+                  </HBox.margin>
+               </VBox>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                  <children>
+                     <Label fx:id="allPrescriptionDrugsLabel" prefHeight="30.0" prefWidth="193.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 2;" text="Назначенные лекарства">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                        <padding>
+                           <Insets left="2.0" />
+                        </padding>
+                     </Label>
+                     <ScrollPane fx:id="allDrugsScrollPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="155.0" prefWidth="270.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;">
+                       <content>
+                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                              <children>
+                                 <VBox fx:id="allDrugsVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="250.0" />
+                              </children>
+                           </AnchorPane>
+                       </content>
+                     </ScrollPane>
+                  </children>
+                  <HBox.margin>
+                     <Insets left="150.0" top="10.0" />
+                  </HBox.margin>
+               </VBox>
+            </children></HBox>
+         <Button fx:id="closePatientInfoButton" layoutX="960.0" layoutY="7.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" style="-fx-background-color: transparent;" text="✖" textAlignment="CENTER" textFill="#bcbcbc">
+            <font>
+               <Font size="24.0" />
+            </font></Button>
+         <Button fx:id="beginNewAppointmentButton" alignment="CENTER" layoutX="870.0" layoutY="635.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startNewAppointment" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #265B84; -fx-background-radius: 5;" text="Новый прием" textAlignment="CENTER" textFill="#fffefe">
+            <font>
+               <Font name="Arial" size="16.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <HBox fx:id="vboxToHbox" layoutX="32.0" layoutY="275.0" prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0">
+                  <children>
+                     <Label fx:id="symptomsLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 3;" text="Симптомы" textAlignment="CENTER">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="-3.0" />
+                        </VBox.margin></Label>
+                     <TextField fx:id="symptomsTextField" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="300.0" promptText="Опишите состояние пациента..." style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;">
+                        <font>
+                           <Font size="16.0" />
+                        </font></TextField>
+                  </children>
+                  <HBox.margin>
+                     <Insets right="15.0" />
+                  </HBox.margin>
+               </VBox>
+               <VBox prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label fx:id="diagnoseLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="80.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 3;" text="Диагноз">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="-3.0" />
+                        </VBox.margin></Label>
+                     <TextField fx:id="diagnoseTextField" alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;">
+                        <font>
+                           <Font name="Arial" size="16.0" />
+                        </font></TextField>
+                  </children>
+                  <HBox.margin>
+                     <Insets right="15.0" />
+                  </HBox.margin>
+               </VBox>
+               <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="300.0">
+                  <children>
+                     <Label fx:id="prescriptionDrugsLabel" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="195.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 3;" text="Назначенные лекарства" textAlignment="CENTER">
+                        <font>
+                           <Font size="16.0" />
+                        </font>
+                        <VBox.margin>
+                           <Insets bottom="-3.0" />
+                        </VBox.margin></Label>
+                     <VBox fx:id="prescriptionDrugsVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;" />
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <Label fx:id="newAppointmentLabel" alignment="CENTER" layoutX="20.0" layoutY="220.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="990.0" style="-fx-background-color: white; -fx-border-color: #C4C4C4; -fx-border-width: 2; -fx-border-radius: 5;" text="Новый прием">
+            <font>
+               <Font name="Arial" size="20.0" />
+            </font></Label>
+         <Button fx:id="cancelNewAppointmentButton" layoutX="870.0" layoutY="635.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelNewAppointment" prefHeight="32.0" prefWidth="130.0" style="-fx-background-color: #265B84; -fx-background-radius: 5;" text="Отмена" textAlignment="CENTER" textFill="#fffefe">
+            <font>
+               <Font name="Arial" size="16.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button fx:id="finishAppointmentButton" layoutX="700.0" layoutY="635.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#finishAppointment" prefHeight="32.0" prefWidth="160.0" style="-fx-background-color: #265B84; -fx-background-radius: 5;" text="Завершить прием" textAlignment="CENTER" textFill="#fffefe">
+            <font>
+               <Font size="16.0" />
+            </font>
+            <cursor>
+               <Cursor fx:constant="HAND" />
+            </cursor>
+         </Button>
+         <Button fx:id="addNewDrugsButton" alignment="CENTER" layoutX="860.0" layoutY="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addNewDrugsForAppointment" prefHeight="30.0" prefWidth="45.0" style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 3;" text="➕" textAlignment="CENTER" textFill="#265a82c5" translateZ="-1.0">
+            <font>
+               <Font name="Arial" size="16.0" />
+            </font></Button>
+         <Label layoutX="25.0" layoutY="660.0" opacity="0.22" text="Изображения от macrovector на Freepik" />
+      </children>
+      <VBox.margin>
+         <Insets top="-470.0" />
+      </VBox.margin>
+   </Pane>
+</VBox>
