@@ -108,7 +108,7 @@ public class LoginController implements Initializable {
     public void addNewUser() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("add_new_user.fxml"));
-            Parent rootRegistrationPage = (Parent) loader.load();
+            Parent rootRegistrationPage = loader.load();
 
             Stage localStage = new Stage();
             localStage.setScene(new Scene(rootRegistrationPage, 600, 250));

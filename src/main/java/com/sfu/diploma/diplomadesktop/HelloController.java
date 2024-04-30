@@ -39,7 +39,7 @@ public class HelloController implements Initializable {
         });
     }
     public void userLogin() throws Exception {
-        //Checking if textfield is empty
+        //Checking if text field is empty
         if (idOfUserField.getText().isEmpty()) {
             Alert idFieldIsEmptyWindow = new Alert(Alert.AlertType.ERROR, "Поле \"ID сотрудника\" не может быть пустым!");
             idFieldIsEmptyWindow.showAndWait();
