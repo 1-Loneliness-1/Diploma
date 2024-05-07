@@ -45,8 +45,9 @@ dependencies {
         exclude(group: 'org.openjfx')
     }
     implementation('org.kordamp.ikonli:ikonli-javafx:12.3.1')
-    implementation ('mysql:mysql-connector-java:8.0.22')
+    implementation('mysql:mysql-connector-java:8.0.33')
     implementation('joda-time:joda-time:2.12.5')
+    implementation("org.json:json:20240303")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")

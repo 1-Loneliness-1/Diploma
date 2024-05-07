@@ -17,6 +17,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -24,8 +26,6 @@ import java.net.URL;
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ResourceBundle;
-import org.joda.time.DateTime;
-import org.joda.time.DateTimeZone;
 
 public class PatientInfoController implements Initializable {
     public PatientInfoController() {}
@@ -74,6 +74,7 @@ public class PatientInfoController implements Initializable {
     public Button cancelNewAppointmentButton;
     public Button finishAppointmentButton;
     public Button addNewDrugsButton;
+    public Button createDietButton;
     public Label lastAppointmentLabel;
     public Label allPrescriptionDrugsLabel;
 
@@ -86,13 +87,10 @@ public class PatientInfoController implements Initializable {
         allDrugsVBox.setSpacing(2);
         prescriptionDrugsVBox.setSpacing(2);
 
-        closePatientInfoButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                setVisibilityForLabels(false);
-                setVisibilityForAppointmentElements(false);
+        closePatientInfoButton.setOnAction(event -> {
+            setVisibilityForLabels(false);
+            setVisibilityForAppointmentElements(false);
 
-            }
         });
 
         try {
@@ -111,12 +109,9 @@ public class PatientInfoController implements Initializable {
                 buttonForAdd.setCursor(Cursor.HAND);
                 buttonForAdd.setStyle("-fx-pref-width: 285; -fx-pref-height: 30; -fx-border-color: grey; " +
                         "-fx-background-color: gainsboro; -fx-font-size: 14px; -fx-text-alignment: center;");
-                buttonForAdd.setOnAction(new EventHandler<ActionEvent>() {
-                    @Override
-                    public void handle(ActionEvent event) {
-                        setTextForLabels(buttonForAdd.getText());
-                        setVisibilityForAppointmentElements(false);
-                    }
+                buttonForAdd.setOnAction(event -> {
+                    setTextForLabels(buttonForAdd.getText());
+                    setVisibilityForAppointmentElements(false);
                 });
                 patientsVBox.getChildren().add(buttonForAdd);
             }
@@ -143,6 +138,28 @@ public class PatientInfoController implements Initializable {
             stage.show();
         }
         catch (Exception error) {
+            System.out.println(error);
+        }
+    }
+
+    public void goToDietPage() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("diet.fxml"));
+            Parent rootDietPage = loader.load();
+            Stage stage = new Stage();
+
+            try (FileWriter writer = new FileWriter("transfer_patient_id.txt", false)) {
+                writer.write(patientIdLabel.getText().substring(4));
+                writer.flush();
+            } catch (IOException ex) {
+                System.out.println(ex.getMessage());
+            }
+
+            stage.setScene(new Scene(rootDietPage, 600, 400));
+            stage.getIcons().add(new Image("/img/icon_for_diploma_app_1024px_t.png"));
+            stage.setTitle("Pulse-MIS. Создание диеты");
+            stage.show();
+        } catch (Exception error) {
             System.out.println(error);
         }
     }
@@ -385,6 +402,7 @@ public class PatientInfoController implements Initializable {
         prescriptionDrugsVBox.setVisible(visible);
         cancelNewAppointmentButton.setVisible(visible);
         finishAppointmentButton.setVisible(visible);
+        createDietButton.setVisible(visible);
         addNewDrugsButton.setVisible(visible);
     }
 

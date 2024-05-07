@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.sfu.diploma.diplomadesktop.DietController">
+    <children>
+        <Pane>
+            <children>
+                <TextField fx:id="tfNameOfProduct" layoutX="15.0" layoutY="15.0" maxHeight="-Infinity"
+                           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0"
+                           prefWidth="330.0" promptText="Enter name of product">
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                </TextField>
+                <Button fx:id="bSearchProduct" layoutX="315.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                        minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0"
+                        prefWidth="30.0" style="-fx-background-color: #265B84;" text="🔎" textFill="#fffefe"/>
+                <VBox layoutX="360.0" layoutY="15.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="350.0" prefWidth="230.0">
+                    <children>
+                        <Label style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 2;"
+                               text="Питательные вещества">
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </padding>
+                            <font>
+                                <Font name="Arial" size="16.0"/>
+                            </font>
+                            <VBox.margin>
+                                <Insets bottom="-3.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <ScrollPane fx:id="spNutrients" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                                    minWidth="-Infinity" prefHeight="150.0" prefWidth="220.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <VBox fx:id="vbNutrients" maxHeight="-Infinity" maxWidth="-Infinity"
+                                              minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0"/>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                            <VBox.margin>
+                                <Insets/>
+                            </VBox.margin>
+                        </ScrollPane>
+                        <Label fx:id="lPrescrProducts"
+                               style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 2;"
+                               text="Назначенные продукты">
+                            <font>
+                                <Font name="Arial" size="16.0"/>
+                            </font>
+                            <padding>
+                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets bottom="-3.0" top="10.0"/>
+                            </VBox.margin>
+                        </Label>
+                        <ScrollPane fx:id="spAlreadyEnteredProducts" maxHeight="-Infinity" maxWidth="-Infinity"
+                                    minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="220.0"
+                                    style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 2;">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                    <children>
+                                        <VBox fx:id="vbAlreadyPrescProducts" maxHeight="-Infinity" maxWidth="-Infinity"
+                                              minHeight="-Infinity" minWidth="-Infinity" prefWidth="200.0"/>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </VBox>
+                <Label fx:id="lNameOfProduct" layoutX="15.0" layoutY="60.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="330.0"
+                       style="-fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5; -fx-background-color: white;"
+                       text="Название: SUPREME" textAlignment="JUSTIFY" visible="false">
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label fx:id="lManufacturer" layoutX="15.0" layoutY="110.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                       minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="330.0"
+                       style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;"
+                       text="Производитель: USA Milk Company" visible="false">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                </Label>
+                <Label fx:id="lComponents" alignment="TOP_LEFT" layoutX="15.0" layoutY="160.0" minHeight="-Infinity"
+                       prefHeight="100.0" prefWidth="330.0"
+                       style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;"
+                       text="Состав: sugar, sult, a lot of milk, and other components" textAlignment="JUSTIFY"
+                       visible="false">
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                </Label>
+                <Label fx:id="lWeight" layoutX="15.0" layoutY="275.0" prefHeight="35.0" prefWidth="330.0"
+                       style="-fx-background-color: white; -fx-border-color: gainsboro; -fx-border-width: 2; -fx-border-radius: 5;"
+                       text="Вес: 300 g" visible="false">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    </padding>
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                </Label>
+                <Button fx:id="bPrescription" layoutX="15.0" layoutY="330.0" mnemonicParsing="false" text="Назначить"
+                        visible="false">
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                </Button>
+                <Button fx:id="bCancelPrescription" layoutX="130.0" layoutY="330.0" mnemonicParsing="false"
+                        text="Отменить" visible="false">
+                    <font>
+                        <Font name="Arial" size="16.0"/>
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</VBox>
