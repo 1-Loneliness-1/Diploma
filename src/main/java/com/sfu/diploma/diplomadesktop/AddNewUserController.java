@@ -43,10 +43,9 @@ public class AddNewUserController implements Initializable {
 
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Пользователь успешно зарегистрирован.");
             alert.showAndWait();
-        }
-        catch(Exception ex) {
+        } catch (Exception ex) {
             System.out.println("Connection failure...");
-            System.out.println(String.valueOf(ex));
+            System.out.println(ex);
         }
         Stage stg = (Stage) newUserIDTextField.getScene().getWindow();
         stg.close();

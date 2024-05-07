@@ -7,10 +7,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+
 import java.io.FileWriter;
 import java.io.IOException;
-import java.sql.*;
 import java.net.URL;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
@@ -38,8 +39,9 @@ public class HelloController implements Initializable {
             loginButton.setDisable(idOfUserField.getText().isEmpty() || userPassField.getText().isEmpty());
         });
     }
-    public void userLogin() throws Exception {
-        //Checking if textfield is empty
+
+    public void userLogin() {
+        //Checking if text field is empty
         if (idOfUserField.getText().isEmpty()) {
             Alert idFieldIsEmptyWindow = new Alert(Alert.AlertType.ERROR, "Поле \"ID сотрудника\" не может быть пустым!");
             idFieldIsEmptyWindow.showAndWait();

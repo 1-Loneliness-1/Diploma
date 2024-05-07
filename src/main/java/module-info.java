@@ -7,6 +7,9 @@ module com.sfu.diploma.diplomadesktop {
     requires org.kordamp.ikonli.javafx;
     requires java.sql;
     requires org.joda.time;
+    requires kotlin.stdlib;
+    requires java.net.http;
+    requires org.json;
 
     opens com.sfu.diploma.diplomadesktop to javafx.fxml;
     exports com.sfu.diploma.diplomadesktop;
